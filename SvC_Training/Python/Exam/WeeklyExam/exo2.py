@@ -9,7 +9,7 @@ def afficher_solutions_doubles(a,b,c,delta):
         print("il y a une seule solution x= {}".format(x))
     else:
         #la difference entre les deux codes est ici
-        x1 = (-b - sqrt(delta))/(2*a) if b<0 else (-b + sqrt(delta))/(2*a) 
+        x1 = (-b - sqrt(delta))/(2*a) if b>0 else (-b + sqrt(delta))/(2*a) 
         #calcul de la seconde solution
         x2 = c/(x1*a)
         print("il y a deux solutions réelles: x1= {} et x2= {}".format(x1,x2))
